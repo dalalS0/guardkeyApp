@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GuardKey0" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#8E8E8E</item>
+    </style>
+
+    <style name="Theme.GuardKey0" parent="Base.Theme.GuardKey0" />
+</resources>

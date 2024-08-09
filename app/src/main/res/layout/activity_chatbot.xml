@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#EFF1F3"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chatbot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="33dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/go_back"
+                app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Chatbot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginTop="44dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/bot_img" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:background="@drawable/chat_edit"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="13dp"
+                    android:gravity="center"
+                    android:text="Welcome!"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/name_user"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:layout_marginTop="77dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/bot_img" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:padding="3dp"
+                android:background="@drawable/chat_edit"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingStart="11dp"
+                    android:text="Frequently asked questions to protect your password:"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="71dp"
+            android:background="@drawable/chat_edit"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/respond1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="3dp"
+                android:paddingStart="11dp"
+                android:layout_marginBottom="2dp"
+                android:text="1-  How do i make my password more secure ?"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="71dp"
+            android:background="@drawable/chat_edit"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/respond2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="3dp"
+                android:paddingStart="11dp"
+                android:text="2- How to keep my password safe online?"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="71dp"
+            android:background="@drawable/chat_edit"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/respond3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="3dp"
+                android:paddingStart="11dp"
+                android:text="3- What are the most common cybersecurity threats and what are the best ways to avoid it?"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:layout_marginTop="59dp"
+            android:visibility="gone"
+            android:id="@+id/user_respond1"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:background="@drawable/edit_user">
+                <TextView
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingStart="11dp"
+                    android:text="1- How can I create a strong and secure password?"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="7dp"
+                app:srcCompat="@drawable/user" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bot_respond1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:visibility="gone"
+            android:layout_marginTop="44dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/bot_img" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:background="@drawable/chat_edit"
+                >
+                <TextView
+                    android:layout_width="263dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingStart="11dp"
+                    android:text="Length: \nAim for 12-16 characters for increased security.
+\nComplexity: \nUse a mix of uppercase letters, lowercase letters, numbers, and special characters.
+\nUnpredictability: \nAvoid using easily guessable information like names or birthdays.
+\nUniqueness: \nHave a unique password for each account.
+\nAvoid common patterns and dictionary words.
+\nConsider using a password manager for secure storage."
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/user_respond2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:layout_marginTop="59dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:background="@drawable/edit_user">
+                <TextView
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingStart="11dp"
+                    android:text="2- How can I protect their my password in online?"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="7dp"
+                app:srcCompat="@drawable/user" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bot_respond2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingTop="1dp"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/bot_img" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:background="@drawable/chat_edit"
+                >
+                <TextView
+                    android:layout_width="263dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingStart="11dp"
+                    android:text="To protect your password online, follow these practices: \nUse strong and unique passwords for each account.
+\nEnable two-factor authentication (2FA) whenever it's available, as it provides an extra layer of security.
+\nBe cautious with public Wi-Fi connections, as they may not be secure.
+\nAvoid saving passwords in web browsers or sharing them with others.
+\nRegularly update your passwords, especially if you suspect a security breach or if a website has been compromised.
+\nBe cautious with phishing attempts and never enter your password on suspicious websites or in unsolicited emails."
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/user_respond3"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:layout_marginTop="59dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:background="@drawable/edit_user">
+                <TextView
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingStart="11dp"
+                    android:text="3- What are some common cybersecurity threats and how to protect myself from it?"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="7dp"
+                app:srcCompat="@drawable/user" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/bot_respond3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:visibility="gone"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/bot_img" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:background="@drawable/chat_edit"
+                >
+                <TextView
+                    android:layout_width="263dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingStart="11dp"
+                    android:text="Some common cybersecurity threats and ways to protect yourself from them include:
+
+\nPhishing: \nBe cautious of emails/websites asking for personal info. Verify legitimacy before responding.
+\nMalware: \nUse antivirus, firewall, and be careful with downloads.
+\nRansomware: \nKeep software updated, back up data regularly.
+\nIdentity theft: \nMonitor accounts, use strong/unique passwords, enable two-factor authentication.
+\nSocial engineering: \nBe skeptical of unsolicited requests for personal info.
+\nPublic Wi-Fi: \nUse a VPN to protect your data.
+
+\nThe key is staying vigilant, using security best practices, and keeping software up-to-date to protect against common cybersecurity threats."
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

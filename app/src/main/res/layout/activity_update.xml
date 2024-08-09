@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/go_back"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="219dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="33dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/icon_background" />
+                <TextView
+                    android:id="@+id/char_app3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="S"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/pages_input2"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@android:color/transparent"
+                android:hint="App name"
+                android:padding="6dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="34dp"
+            android:text="username"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/title_input2"
+            android:layout_width="316dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shap_edit"
+            android:elevation="3dp"
+            android:padding="13dp"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="12dp"
+            android:text="Password"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:elevation="3dp"
+
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/author_input2"
+                android:layout_gravity="center"
+                android:background="@drawable/shap_edit"
+                android:textColor="@color/white"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/PassLength2"
+            android:layout_width="302sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Password length must be greater then 6 letter"
+            android:textAlignment="center"
+            android:textColor="#DCD52619"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/StrongPass"
+            android:layout_width="302sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="your Password is Strong"
+            android:textAlignment="center"
+            android:textColor="#93C657"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="302sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Something went wrong"
+            android:textAlignment="center"
+            android:textColor="#93C657"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/weakPass"
+            android:layout_width="302sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="your Password is weak you must add upper/lower case and unique characters"
+            android:textAlignment="center"
+            android:textColor="#DCD52619"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/emptyF"
+            android:layout_width="302sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="you must put something in the text field!"
+            android:textAlignment="center"
+            android:textColor="#DCD52619"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/insertedMsg"
+            android:layout_width="302sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Data Successfully Inserted!"
+            android:textAlignment="center"
+            android:textColor="#93C657"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="377dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_button"
+            android:backgroundTint="#0A6D9F"
+            android:text="Save"/>
+
+        <Button
+            android:layout_marginLeft="35dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#AFAFAF"
+            android:text="Delete"
+            android:id="@+id/delete_button"
+            android:layout_toRightOf="@+id/btnAdd"/>
+    </LinearLayout>
+</RelativeLayout>

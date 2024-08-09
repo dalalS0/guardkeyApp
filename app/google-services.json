@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "268200500666",
+    "project_id": "guardkey-c9f93",
+    "storage_bucket": "guardkey-c9f93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268200500666:android:f05150cc2cc61ed5811183",
+        "android_client_info": {
+          "package_name": "com.example.guardkey0"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjoNMyY5jOR-UVbhWqzWW_ujYGQgcuT0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
